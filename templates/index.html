@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Testing Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<h1>API Testing Dashboard</h1>
+
+<input
+    type="text"
+    id="url"
+    placeholder="Enter API URL"
+>
+
+<select id="method">
+    <option value="GET">GET</option>
+    <option value="POST">POST</option>
+</select>
+
+<textarea
+    id="payload"
+    placeholder='JSON payload for POST'
+></textarea>
+
+<button onclick="sendRequest()">
+    Send Request
+</button>
+
+<h2>Result</h2>
+
+<div id="result"></div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
